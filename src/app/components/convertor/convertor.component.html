@@ -1,0 +1,23 @@
+<div class="container">
+  <div class="row justify-content-md-center">
+    <div class="col-md-auto">
+      <h2>{{ title }}</h2>
+      <form [formGroup]="converterForm">
+        <div class="input-group mb-3">
+          <input
+            type="number"
+            class="form-control"
+            placeholder="Enter USD Dollar Here!"
+            aria-label="Enter USD Dollar Here!"
+            aria-describedby="basic-addon2"
+            formControlName="value"
+          />
+          <span class="input-group-text" id="basic-addon2" (click)="Converter()"
+            >Converter</span
+          >
+        </div>
+      </form>
+      <h2 style="text-align: center">{{ convert }}</h2>
+    </div>
+  </div>
+</div>
